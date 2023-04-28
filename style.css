@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.9375rem;
+    background-color: hsl(216, 12%, 8%);
+}
+.containermain{
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(213, 19%, 18%);
+    justify-content: flex-start;
+    
+    gap: 24px;
+    padding: 18px 24px;
+    border-radius: 24px;
+    width: 327px;
+    height: 360px;
+    
+}
+
+
+.icon{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: rgb(34, 39, 49);;
+}
+
+i{
+    color: rgb(255, 136, 0);
+    font-size: 22px;
+}
+.text_rating{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.text_rating h1{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    
+    
+}
+
+.text_rating p{
+    color: hsl(217, 12%, 63%);
+    
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.rating{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.rating .item{
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(34, 39, 49);
+    align-items: center;
+    border-radius: 50px;
+    color: hsl(217, 12%, 63%);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.item:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    
+}
+.item:active{
+    background-color: rgb(108, 111, 116);
+    color: white;
+}
+.item:focus{
+    background-color: rgb(108, 111, 116);
+    color: white;
+}
+button{
+    width: 100%;
+    padding: 12px 0px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    letter-spacing: 1.8px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color:hsl(25, 97%, 53%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerrate{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(213, 19%, 18%);
+    justify-content: center;
+    align-items: center;
+   
+    gap: 24px;
+    padding: 24px 26px;
+    border-radius: 24px;
+    width: 325px;
+    text-align: center;
+    
+}
+.ratingjs h1{
+    font-size: 14px;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(25, 97%, 53%);
+    
+}
+
+.ratingjs{
+    background-color: rgb(34, 39, 49);
+    padding: 6px 20px;
+    border-radius: 50px;
+}
+.text h1{
+    color: white;
+    
+    font-size: 28px;
+}
+
+.text p{
+    
+   
+    line-height: 23px;
+    font-size: 12px;
+    padding: 0px 3px;
+    color: hsl(217, 12%, 63%);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+    .containermain {
+      width: 412px;
+      gap: 28px;
+      padding: 32px 26px;
+      height: 417px;
+    }
+
+    .text_rating h1{
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+        
+        
+    }
+    
+    .text_rating p{
+        color: hsl(217, 12%, 63%);
+        
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .rating .item{
+        height: 56px;
+        width: 56px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(34, 39, 49);
+        align-items: center;
+        border-radius: 50px;
+        color: hsl(217, 12%, 63%);
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .containerrate{
+        width: 412px;
+        height: 417px;
+    }
+
+    .text p{
+      
+       
+        line-height: 23px;
+        font-size: 16px;
+        padding: 0px;
+        color: hsl(217, 12%, 63%);
+    }
+
+    button:hover{
+        background-color: white;
+        color:hsl(25, 97%, 53%);
+    }
+    .item:hover{
+        background-color: hsl(25, 97%, 53%);
+        color: white;
+        
+    }
+    .item:active{
+        background-color: rgb(108, 111, 116);
+        color: white;
+    }
+    .item:focus{
+        background-color: rgb(108, 111, 116);
+        color: white;
+    }
+  }
